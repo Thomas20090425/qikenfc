@@ -1,0 +1,336 @@
+{
+  "time": "2026-09-14T16:05:00",
+  "reader": {
+    "name": "Minicopy(BLE)",
+    "ble_identifier": "B446D9BC-C48E-43AB-DD22-120495E80D68",
+    "pn532_firmware": {
+      "ic": 50,
+      "version": 1,
+      "revision": 6,
+      "support": 7
+    }
+  },
+  "card": {
+    "uid": "0476C9E2D12195",
+    "atqa": "0044",
+    "sak": "00",
+    "ats": null
+  },
+  "authentication": {
+    "attempted": true,
+    "success": true,
+    "pack": "0000",
+    "password_not_saved": true
+  },
+  "version": {
+    "raw": "00 04 03 01 01 00 0B 03",
+    "fixed_header": "00",
+    "vendor_id": "04",
+    "product_type": "03",
+    "product_subtype": "01",
+    "major_version": "01",
+    "minor_version": "00",
+    "storage_size": "0B",
+    "protocol_type": "03",
+    "recognized": true,
+    "variant": "MIFARE Ultralight EV1 MF0UL11-compatible",
+    "total_pages": 20,
+    "user_bytes": 48,
+    "user_page_start": 4,
+    "user_page_end": 15,
+    "config_page_start": 16,
+    "config_page_end": 19
+  },
+  "uid_bcc": {
+    "selected_uid": "0476C9E2D12195",
+    "memory_uid": "0476C9E2D12195",
+    "bcc0_actual": "33",
+    "bcc0_expected": "33",
+    "bcc0_ok": true,
+    "bcc1_actual": "87",
+    "bcc1_expected": "87",
+    "bcc1_ok": true,
+    "selected_uid_matches_memory": true
+  },
+  "locking": {
+    "supported": true,
+    "reason": null,
+    "static_lock_bytes": {
+      "lock_byte_0": "E0",
+      "lock_byte_1": "00"
+    },
+    "block_lock_bits": {
+      "OTP_lock_bit_frozen": false,
+      "pages_04_09_lock_bits_frozen": false,
+      "pages_0A_0F_lock_bits_frozen": false
+    },
+    "otp": {
+      "raw": "00 00 00 00",
+      "set_bits": 0,
+      "zero_bits_remaining": 32,
+      "permanently_locked": false,
+      "lock_bit_frozen": false
+    },
+    "configuration": {
+      "CFG0_raw": "00 00 00 FF",
+      "CFG1_raw": "00 05 00 00",
+      "MOD": "00",
+      "AUTH0": "FF",
+      "password_protection_enabled": false,
+      "ACCESS": "00",
+      "PROT": 0,
+      "PROT_meaning": "write-only protected",
+      "CFGLCK": 0,
+      "configuration_pages_10_11_permanently_locked": false,
+      "AUTHLIM": 0,
+      "VCTID": "05",
+      "PWD_readback": "masked as 00 00 00 00 by the tag",
+      "PACK_readback": "masked as 00 00 by the tag"
+    },
+    "pages": {
+      "00": {
+        "region": "manufacturer/UID",
+        "locked": null,
+        "write_status": "factory read-only on genuine NXP; clone-specific on USCUID",
+        "password_write_required": false,
+        "password_read_required": false
+      },
+      "01": {
+        "region": "manufacturer/UID",
+        "locked": null,
+        "write_status": "factory read-only on genuine NXP; clone-specific on USCUID",
+        "password_write_required": false,
+        "password_read_required": false
+      },
+      "02": {
+        "region": "BCC1/internal/static lock bytes",
+        "locked": null,
+        "write_status": "special: lock bits are one-way (0->1) on genuine NXP; clone-specific UID/BCC behavior may differ",
+        "password_write_required": false,
+        "password_read_required": false
+      },
+      "03": {
+        "region": "OTP",
+        "locked": false,
+        "write_status": "OTP one-way programmable only (0 bits may become 1; cannot erase 1 bits)",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "04": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "05": {
+        "region": "user memory",
+        "locked": true,
+        "write_status": "PERMANENTLY LOCKED",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": false
+      },
+      "06": {
+        "region": "user memory",
+        "locked": true,
+        "write_status": "PERMANENTLY LOCKED",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": false
+      },
+      "07": {
+        "region": "user memory",
+        "locked": true,
+        "write_status": "PERMANENTLY LOCKED",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": false
+      },
+      "08": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "09": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "0A": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "0B": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "0C": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "0D": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "0E": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "0F": {
+        "region": "user memory",
+        "locked": false,
+        "write_status": "writable",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "10": {
+        "region": "configuration",
+        "locked": false,
+        "write_status": "writable configuration",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "11": {
+        "region": "configuration",
+        "locked": false,
+        "write_status": "writable configuration",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "12": {
+        "region": "PWD (read masked)",
+        "locked": false,
+        "write_status": "writable after required authentication; secret value cannot be read back",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      },
+      "13": {
+        "region": "PACK/RFUI (PACK read masked)",
+        "locked": false,
+        "write_status": "writable after required authentication; secret value cannot be read back",
+        "password_write_required": false,
+        "password_read_required": false,
+        "editable_in_current_authenticated_session": true
+      }
+    }
+  },
+  "otp": {
+    "raw": "00 00 00 00",
+    "set_bits": 0,
+    "zero_bits_remaining": 32,
+    "permanently_locked": false,
+    "lock_bit_frozen": false
+  },
+  "counters": {
+    "0": {
+      "counter": {
+        "raw": "00 00 00",
+        "value_lsb_first": 0
+      },
+      "counter_error": null,
+      "tearing": {
+        "flag": "BD",
+        "valid": true
+      },
+      "tearing_error": null
+    },
+    "1": {
+      "counter": {
+        "raw": "00 00 00",
+        "value_lsb_first": 0
+      },
+      "counter_error": null,
+      "tearing": {
+        "flag": "BD",
+        "valid": true
+      },
+      "tearing_error": null
+    },
+    "2": {
+      "counter": {
+        "raw": "00 00 00",
+        "value_lsb_first": 0
+      },
+      "counter_error": null,
+      "tearing": {
+        "flag": "BD",
+        "valid": true
+      },
+      "tearing_error": null
+    }
+  },
+  "originality_signature": {
+    "raw": "89 F2 FA DF 98 63 2D C9 DA 32 CD 52 BA 94 69 28 B2 D7 D2 1F AB DB 69 67 A1 D6 27 56 5D D6 B3 83",
+    "error": null,
+    "cryptographically_verified": false
+  },
+  "pages": {
+    "00": "04 76 C9 33",
+    "01": "E2 D1 21 95",
+    "02": "87 48 E0 00",
+    "03": "00 00 00 00",
+    "04": "00 01 00 01",
+    "05": "32 93 C1 34",
+    "06": "A9 7C 00 00",
+    "07": "54 10 89 2C",
+    "08": "00 00 00 00",
+    "09": "00 00 00 00",
+    "0A": "00 00 00 00",
+    "0B": "00 00 00 00",
+    "0C": "00 00 00 00",
+    "0D": "00 00 00 00",
+    "0E": "00 01 7D 8C",
+    "0F": "00 00 90 C8",
+    "10": "00 00 00 FF",
+    "11": "00 05 00 00",
+    "12": "00 00 00 00",
+    "13": "00 00 00 00"
+  },
+  "page_read_errors": {},
+  "files": {
+    "bin": "2026-09-14.bin",
+    "scan_json": "2026-09-14.scan.json",
+    "scan_txt": "2026-09-14.scan.txt"
+  },
+  "bin_bytes": 80,
+  "notes": [
+    "BIN contains only linear EEPROM page data.",
+    "Counters and originality signature are stored in sidecar scan files because they are command-accessed data, not linear EEPROM pages.",
+    "PWD and PACK memory readback is masked by compliant MF0UL11 tags.",
+    "No EEPROM write, compatibility-write, or counter-increment command is sent by this scanner.",
+    "USCUID clone-specific DirectWrite/magic configuration is not actively probed because it is outside the standard MF0UL11 lock map."
+  ]
+}
